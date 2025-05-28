@@ -1,24 +1,29 @@
-import React from 'react'
-import Logo from './Logo'
-import Button from './utils/button'
+import React from "react";
+import Logo from "./Logo";
+import { Button } from "./utils/button";
 
 export default function Navigation() {
   return (
-      <nav className="flex justify-between items-center mx-auto max-w-7xl h-16 mt-8">
-          <div className="logo">
-              <Logo />
-          </div>
-          <ul className='flex gap-2.5'>
-              <li><a href="/">Features</a></li>
-              <li><a href="/">Pricing</a></li>
-              <li><a href="/">Help</a></li>
-          </ul>
+    <nav className="flex justify-between items-center mx-auto max-w-7xl h-16 mt-8">
+      <div className="logo">
+        <Logo />
+      </div>
+      <ul className="flex gap-2.5">
+        <li>
+          <a href="/">Features</a>
+        </li>
+        <li>
+          <a href="/">Pricing</a>
+        </li>
+        <li>
+          <a href="/">Help</a>
+        </li>
+      </ul>
 
-          <div className='space-x-2'>
-              <Button>Sign In</Button>
-              <Button>Request Demo</Button>
-          </div>
-
+      <div className="space-x-2">
+        <Button variant={'ghost'}>Sign In</Button>
+        <Button>Request Demo</Button>
+      </div>
     </nav>
-  )
+  );
 }

@@ -1,0 +1,35 @@
+---
+import liquidityImg from "../assets/Slider Image 01.jpg";
+import { SectionText, SubText } from "./utils/HeroText";
+---
+
+<section class="py-28 bg-neutral-900 w-[calc(100vw-20rem)] mx-auto">
+  <div class="max-w-7xl mx-auto">
+    <SectionText className="!max-w-4xl"
+      >Handcrafted to Manage all your Cash liquidity</SectionText
+    >
+    <SubText
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere beatae
+      officia autem culpa excepturi totam.</SubText
+    >
+    <div class="flex justify-between gap-8 items-center py-12">
+      <div class="md:w-3/6 text-left">
+        <h3 class="text-4xl font-semibold py-4">
+          Handcrafted to Manage all your Cash liquidity
+        </h3>
+        <SubText className="!text-left"
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          maxime iste quod, nulla aliquid esse quo saepe, odio enim cum
+          blanditiis quisquam possimus minus exercitationem nemo veritatis eum
+          iure repudiandae</SubText
+        >
+        <SubText className="!text-left pt-4"
+          >Lorem ipsum dolor sit amet.
+        </SubText>
+      </div>
+      <div class="w-1/2 rounded-3xl">
+        <img src={liquidityImg.src} class="rounded-3xl h-full w-full" />
+      </div>
+    </div>
+  </div>
+</section>

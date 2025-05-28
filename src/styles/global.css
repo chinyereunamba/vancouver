@@ -5,3 +5,11 @@ html,body{
     color: white;
 }
 
+:root{
+    --primary: white;
+    
+}
+
+section{
+    @apply mt-12;
+}
