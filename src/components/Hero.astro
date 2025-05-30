@@ -1,0 +1,39 @@
+---
+import { Button } from "./utils/Button";
+import heroImg from "../assets/Product.jpg";
+import featureImg1 from "../assets/Logo01.svg";
+import HeroText, { SubText } from "./utils/HeroText";
+import { ArrowRight } from "@lucide/astro";
+import Image from "astro/components/Image.astro";
+---
+
+<div class="max-w-7xl mx-auto my-16 text-center">
+  <div class="">
+    <HeroText>
+      <span class="bg-clip-text text-transparent gradient-text">
+        Tailormade
+      </span>{" "}
+      to Manage all your Data registers
+    </HeroText>
+    <SubText>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. At etiam tellus
+      aliquet risus, odio vitae cras viverra elementum.
+    </SubText>
+  </div>
+  <div class="flex gap-4 justify-center py-12 items-center">
+    <Button className="gap-1">Request a demo <ArrowRight /></Button>
+    <div
+      class="gradient-text rounded-md p-0.5"
+    >
+      <button
+        class="px-3.5 py-1.5 w-32 h-9 cursor-pointer bg-black inline-flex items-center justify-center whitespace-nowrap font-semibold rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+        >Learn More</button
+      >
+    </div>
+  </div>
+  <div>
+    <Image src={featureImg1} alt="HeroImg" />
+    <img src={heroImg.src} />
+  </div>
+</div>
+

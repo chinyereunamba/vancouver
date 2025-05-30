@@ -1,13 +1,13 @@
 ---
-import { Button } from "./utils/button";
+import { Button } from "./utils/Button";
 import { SectionText, SubText } from "./utils/HeroText";
+import { ArrowRight } from "@lucide/astro";
 ---
 
 <section class="max-w-7xl mx-auto">
   <div class="max-w-3xl">
     <SectionText className="text-left"
-      >Access <span
-        class="bg-gradient-to-r from-[#DEC880]  via-[#FF347D] to-[#827DED] bg-clip-text text-transparent"
+      >Access <span class="gradient-text bg-clip-text text-transparent"
         >powerful
       </span> and helpful features</SectionText
     >
@@ -17,6 +17,6 @@ import { SectionText, SubText } from "./utils/HeroText";
       molestias, dolor debitis sed, fugiat labore optio? Nemo, voluptates
       exercitationem.</SubText
     >
-    <Button className="my-5">Request a demo</Button>
+    <Button className="my-5 gap-1">Request a demo <ArrowRight /></Button>
   </div>
 </section>

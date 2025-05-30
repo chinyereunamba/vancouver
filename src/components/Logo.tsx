@@ -34,7 +34,7 @@ export default function Logo() {
           y2="21.9664"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DEC880" />
+          <stop stopColor="#DEC880" />
           <stop offset="0.155674" stop-color="white" />
           <stop offset="0.567708" stop-color="#FF347D" />
           <stop offset="1" stop-color="#827DED" />

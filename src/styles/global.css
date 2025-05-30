@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
-html,body{
-    background: #000000;
-    color: white;
+html,
+body {
+  background: #000000;
+  color: white;
 }
 
-:root{
-    --primary: white;
-    
+:root {
+  --primary: white;
+  --background: black;
 }
 
-section{
-    @apply mt-12;
+section {
+  @apply mt-12;
+}
+.gradient-text {
+  background-image: linear-gradient(to right, #dec880, white, #ff347d, #827ded);
 }

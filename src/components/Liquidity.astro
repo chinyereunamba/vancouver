@@ -1,11 +1,14 @@
 ---
-import liquidityImg from "../assets/Slider Image 01.jpg";
+import Image from "astro/components/Image.astro";
+import liquidityImg1 from "../assets/Slider Image 01.jpg";
+import liquidityImg2 from "../assets/Slider Image 02.jpg";
+import liquidityImg3 from "../assets/Slider Image 03.jpg";
 import { SectionText, SubText } from "./utils/HeroText";
 ---
 
-<section class="py-28 bg-neutral-900 w-[calc(100vw-20rem)] mx-auto">
+<section class="p-28 bg-neutral-900 w-full">
   <div class="max-w-7xl mx-auto">
-    <SectionText className="!max-w-4xl"
+    <SectionText className="!max-w-4xl text-center"
       >Handcrafted to Manage all your Cash liquidity</SectionText
     >
     <SubText
@@ -13,7 +16,7 @@ import { SectionText, SubText } from "./utils/HeroText";
       officia autem culpa excepturi totam.</SubText
     >
     <div class="flex justify-between gap-8 items-center py-12">
-      <div class="md:w-3/6 text-left">
+      <div class="md:w-2/5 text-left">
         <h3 class="text-4xl font-semibold py-4">
           Handcrafted to Manage all your Cash liquidity
         </h3>
@@ -27,8 +30,10 @@ import { SectionText, SubText } from "./utils/HeroText";
           >Lorem ipsum dolor sit amet.
         </SubText>
       </div>
-      <div class="w-1/2 rounded-3xl">
-        <img src={liquidityImg.src} class="rounded-3xl h-full w-full" />
+      <div class="w-3/5 rounded-3xl relative ">
+        <Image src={liquidityImg1} class="rounded-3xl h-full w-full z-2 -translate-0" alt={''} />
+        <!-- <Image src={liquidityImg2} class="rounded-3xl h-full w-full z-1 -top-0" alt={''} />
+        <Image src={liquidityImg3} class="rounded-3xl h-full w-full z-0" alt={''} /> -->
       </div>
     </div>
   </div>

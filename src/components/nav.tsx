@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import { Button } from "./utils/button";
+import { Button } from "./utils/Button";
 
 export default function Navigation() {
   return (
@@ -8,7 +8,7 @@ export default function Navigation() {
       <div className="logo">
         <Logo />
       </div>
-      <ul className="flex gap-2.5">
+      <ul className="flex gap-4">
         <li>
           <a href="/">Features</a>
         </li>
@@ -21,7 +21,7 @@ export default function Navigation() {
       </ul>
 
       <div className="space-x-2">
-        <Button variant={'ghost'}>Sign In</Button>
+        <Button variant={"ghost"}>Sign In</Button>
         <Button>Request Demo</Button>
       </div>
     </nav>

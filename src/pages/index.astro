@@ -1,18 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/nav';
-import Hero from '../components/Hero'
-import Partners from '../components/Partners';
-import Features from "../components/Features"
+import Hero from '../components/Hero.astro'
+import Partners from '../components/Partners.astro';
+import Features from "../components/Features.astro"
 import Liquidity from '../components/Liquidity.astro';
 import Access from '../components/Access.astro';
+import Plans from '../components/Plans.astro';
+import Connect from '../components/Connect.astro';
+
+const title = Astro.props.title
 ---
 
-<Layout>
+<Layout title="Vancouver">
 	<Navigation client:load />
-	<Hero client:load/>
-	<Partners client:visible/>
+	<Hero />
+	<Partners/>
 	<Features />
 	<Liquidity />
 	<Access />
+	<Plans />
+	<Connect />
 </Layout>

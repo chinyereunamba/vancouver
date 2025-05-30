@@ -1,0 +1,78 @@
+---
+import { SectionText, SubText } from "./utils/HeroText";
+import checkMark from "../assets/Checkmark Icon.png";
+import { Button } from "./utils/Button";
+const benefits = [
+  "Cloud Storage",
+  "Private access",
+  "Comments",
+  "Export to PNG",
+  "Unlimited Shares",
+  "Embed Links",
+  "Print Ready PDF",
+];
+---
+
+<section class="max-w-7xl mx-auto">
+  <SectionText>Our payment plan is easy to understand</SectionText>
+  <div class="flex gap-4 items-center justify-center">
+    <div class="gradient-text rounded-md p-0.5">
+      <button
+        class="px-3.5 py-1.5 w-[150px] h-9 cursor-pointer bg-black inline-flex items-center justify-center whitespace-nowrap font-semibold rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+        >Pay Monthly</button
+      >
+    </div>
+    <Button variant="outline" className="[w-150px]"> Pay Yearly </Button>
+  </div>
+  <div class="flex justify-between gap-8 items-start my-16">
+    <div
+      class="flex flex-col justify-between h-[700px] bg-neutral-900 w-full max-w-[500px] px-12 py-16 rounded-xl"
+    >
+      <div>
+        <p class="text-6xl font-semibold text-center">Pro</p>
+        <div
+          class="text-center grid auto-cols-max grid-flow-col space-y-4 justify-center"
+        >
+          <span
+            class="text-white text-4xl font-semibold place-self-start translate-y-4"
+            >$</span
+          >
+          <p
+            class="text-[200px] leading-[190px] mb-0 font-semibold gradient-text bg-clip-text text-transparent"
+          >
+            12
+          </p>
+          <span
+            class="text-white text-4xl font-semibold place-self-end -translate-y-4"
+            >/mo</span
+          >
+        </div>
+        <SubText>$144 per person billed yearly</SubText>
+      </div>
+      <div class="w-full flex justify-center flex-col gap-4">
+        <Button className="!p-6">Start Free Trial</Button><Button
+          >Sign in to manage your account</Button
+        >
+      </div>
+    </div>
+    <div class="w-1/2 space-y-6 p-4">
+      <h2 class="text-5xl w-[500px] font-semibold leading-16">
+        Try Our free product for a month
+      </h2>
+      <SubText className="text-left"
+        >No credit card required, start for free, and pick a plan later. You can
+        cancel at anytime.</SubText
+      >
+      <div class="grid grid-cols-2 grid-rows-6 gap-y-8 my-6">
+        {
+          benefits.map((item) => (
+            <div class="flex items-center gap-2">
+              <img src={checkMark.src} width={30} />
+              <span class="text-lg">{item}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
